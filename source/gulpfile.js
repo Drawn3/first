@@ -20,7 +20,7 @@ gulp.task('sass', function () {
       .pipe(sourceMaps.init())
       .pipe(sass())
       .pipe(autoprefixer({
-        browsers: ['last 2 version']
+        browsers: ['last 5 version']
       }))
       .pipe(sourceMaps.write())
       .pipe(gulp.dest('build/css'))
